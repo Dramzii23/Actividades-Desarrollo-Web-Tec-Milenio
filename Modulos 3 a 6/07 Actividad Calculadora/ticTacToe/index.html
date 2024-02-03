@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table.gato {
+            background: #ebebeb;
+            border: 1px solid darkgray;
+            padding: 1em;
+            border-radius: .5em;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        td button {
+            height: 10em;
+            width: 10em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Tic Tac Toe</h1>
+    <table class="gato button">
+
+
+
+        <tr>
+            <td><button>-</button></td>
+            <td><button>-</button></td>
+            <td><button>-</button></td>
+
+        </tr>
+        <tr>
+            <td><button>-</button></td>
+            <td><button>-</button></td>
+            <td><button>-</button></td>
+
+        </tr>
+        <tr>
+            <td><button>-</button></td>
+            <td><button>-</button></td>
+            <td><button>-</button></td>
+
+        </tr>
+
+    </table>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var lastused = "O"; // Initialize with "O" so the first click will result in "X"
+
+            const botones = document.querySelectorAll(".gato button");
+
+            botones.forEach((boton) => {
+                boton.addEventListener("click", () => {
+                    if (boton.textContent === "-") {
+                        if (lastused === "X") {
+                            lastused = "O";
+                        } else {
+                            lastused = "X";
+                        }
+                        boton.textContent = lastused;
+                    }
+
+                    // Check if there is a winner or not
+                    if (boton.textContent !== "-") {
+                        // alert(lastused);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+@media only screen and (min-width: 600px) {
+  .flexContainer {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 1em;
+  }
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
