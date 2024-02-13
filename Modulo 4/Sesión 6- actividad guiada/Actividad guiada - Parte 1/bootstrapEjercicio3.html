@@ -24,20 +24,20 @@
         .red {
             background-color: red;
             color: rgb(247, 228, 231);
-            margin: .25em;
+            /* margin: .25em; */
 
         }
 
         .pink {
             background-color: magenta;
-            margin: .25em;
+            /* margin: .25em; */
             color: white;
 
         }
 
         .peach {
             background-color: peachpuff;
-            margin: .25em;
+            /* margin: .25em; */
             color: black;
             height: 6em;
         }
@@ -47,8 +47,8 @@
             background-color: blue;
             border: none;
             color: white;
-            margin: .25em;
-            height: 3em;
+            /* margin: .25em;
+            height: 3em; */
 
         }
 
@@ -72,39 +72,38 @@
 
 <body>
     <div class="container">
-        <div class="row green height2">
+        <div class="row green m-0 height2">
 
         </div>
-        <div class="row no-border transpBG">
-            <div class="col-2 red">Column Red</div>
-            <div class="col yes-border white">
-                <div class="row pink heigh2">Pink</div>
-                <div class="row">
-                    <div class="col-md-1  peach ">Peach</div>
-                    <div class="col-md-1 peach ">Peach</div>
+        <div class="row my-1 mx-0">
+            <div class="col-2 m-0 red">Column Red</div>
+            <div class="col mx-1 border p-1">
+                <div class="row m-1 pink heigh2">Pink</div>
+                <div class="row my-1 mx-0">
+                    <div class="col m-1 peach ">Peach</div>
+                    <div class="col m-1 peach ">Peach</div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-3">
-                        <div class="row">
-                            <div class="col blue">blue</div>
-                            <div class="col blue">blue</div>
-                            <div class="col-3 blue">blue</div>
-                            <div class="col blue">blue</div>
-                            <div class="col blue">blue</div>
+                <div class="row m-0 h">
+                    <div class="col m-0">
+                        <div class="row my-1 d-flex flex-wrap ">
+                            <div class="col-sm-3 col-md-2 blue m-1 ">blue</div>
+                            <div class="col-sm-3 col-md-2  blue m-1">blue</div>
+                            <div class="col-sm-3 col-md-3  blue m-1">blue</div>
+                            <div class="col-sm-3 col-md-2  blue m-1 ">blue</div>
+                            <div class="col-sm-3 col-md-2  blue m-1 ">blue</div>
+
+                            <div class="col-sm-3 col-md-2  blue m-1">blue</div>
+                            <div class="col-sm-3 col-md-2  blue m-1">blue</div>
+                            <div class="col-sm-3 col-md-3  blue m-1">blue</div>
+                            <div class="col-sm-3 col-md-2  blue m-1 ">blue</div>
+                            <div class="col-sm-3 col-md-2  blue m-1 ">blue</div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col blue">blue</div>
-                        <div class="col blue">blue</div>
-                        <div class="col-3 blue">blue</div>
-                        <div class="col blue">blue</div>
-                        <div class="col blue">blue</div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div class="row green height1">
+        <div class="row green m-0 height2">
 
         </div>
     </div>
